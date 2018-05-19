@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.clientuser.droid101" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".Droid101ApplicationClass">
+
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--A ClientUser.net tutorial -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity android:name=".AboutActivity">
+            <!--Comment: A ClientUser.net Tutorial -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="net.clientuser.droid101.action.DRINKBEER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MyFirstButtonActivity">
+            <!--Comment: A ClientUser.net Tutorial -->
+            <intent-filter>
+                <action android:name="net.clientuser.droid101.action.MYFIRSTBUTTON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SettingsActivity">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".AnimationActivity001">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".AnimationActivity002">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".GameLoopActivity001"
+            android:screenOrientation="portrait">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".GameLoopActivity002"
+            android:screenOrientation="portrait">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".GameLoopActivity003"
+            android:screenOrientation="portrait">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".GameLoopActivity004"
+            android:screenOrientation="portrait">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".SpriteSheetActivity001"
+            android:screenOrientation="portrait">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".SpriteArrayActivity001"
+            android:screenOrientation="portrait">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+        <activity android:name=".SpriteListActivity001"
+            android:screenOrientation="portrait">
+            <!-- A ClientUser.net tutorial -->
+        </activity>
+
+
+    </application>
+
+</manifest>
